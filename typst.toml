@@ -1,0 +1,16 @@
+[package]
+name = "example"
+version = "0.1.0"
+entrypoint = "lib.typ"
+license = "MIT-0"
+description = "An example package."
+repository = "https://github.com/avonmoll/bamdone-rebuttal"
+authors = ["Alexander Von Moll <https://avonmoll.github.io>", "Isaac Weintraub <https://wwww.isaacew.com>"]
+keywords = ["rebuttal", "response", "letter", "reviewers"]
+categories = ["office", "report"]
+compiler = "0.11.0"
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
