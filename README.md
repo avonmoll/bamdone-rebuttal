@@ -1,4 +1,3 @@
-
 # bamdone-rebuttal
 This is a Typst template for a rebuttal/response letter.
 It allows authors to respond to feedback given by reviewers in a peer-review process on a point-by-point basis.
