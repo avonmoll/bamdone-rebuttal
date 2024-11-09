@@ -64,11 +64,12 @@
   // Quotation Formatting
   set quote(block: true)
   show quote: set pad(left: 2em)
-  show quote: set block(
+  show quote: it => block(
     fill: black.transparentize(90%),
     width: 100%,
     inset: 5pt,
     radius: 1pt,
+    it
   )
 
   show figure.where(kind: "point"): set block(breakable: true)
