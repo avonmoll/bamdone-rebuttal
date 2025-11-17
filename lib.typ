@@ -56,7 +56,7 @@
   set page(
     numbering: "1",
     number-align: center,
-    paper: "us-letter",
+    paper: paper-size,
   )
   set text(11pt)
   set par(justify: true)
