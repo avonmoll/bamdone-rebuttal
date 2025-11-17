@@ -64,6 +64,7 @@
   // Quotation Formatting
   set quote(block: true)
   show quote: set pad(left: 2em)
+  show quote: set block(spacing: 1em)
   show quote: it => block(
     fill: black.transparentize(90%),
     width: 100%,
