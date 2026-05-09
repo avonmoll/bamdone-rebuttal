@@ -45,7 +45,7 @@
   // Content containing list of authors
   authors: [],
 
-  date: datetime.today().display(),
+  date: datetime.today(),
 
   // The article's paper size. Also affects the margins.
   paper-size: "us-letter",
@@ -53,6 +53,20 @@
   // The paper's content.
   body,
 ) = {
+  set document(
+    title: title,
+    author: authors.text,
+    date: if type(date) == datetime {
+      date
+    } else {
+      none
+    },
+  )
+  // Convert datetime to formatted date
+  if type(date) == datetime {
+    date = date.display()
+  }
+
   set page(
     numbering: "1",
     number-align: center,
